@@ -51,6 +51,7 @@ const Chessboard = ()=>{
   const update = (row,col)=>{
     //如果游戏结束 点击时间关闭
     if(finish) return
+    if(maps[row][col]) return
     // 每次点击 切换符号
     setN(n+1)
     const newMaps = clone(maps)
